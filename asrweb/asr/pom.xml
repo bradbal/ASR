@@ -6,7 +6,6 @@
     <groupId>com.asr.springmvc</groupId>
     <artifactId>asr</artifactId>
     <version>0.1.0</version>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -68,7 +67,7 @@
             <artifactId>bnkit</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/bnkit.jar</systemPath>
+            <systemPath>/home/ariane/Documents/dependency/bnkit.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>net.minidev</groupId>

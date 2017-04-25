@@ -65,7 +65,7 @@
     <orderEntry type="module-library">
       <library name="Maven: bnkit:bnkit:1.0">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/src/main/resources/lib/bnkit.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../../../dependency/bnkit.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

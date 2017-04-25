@@ -7,6 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="ASRPOG1" level="project" />
+    <orderEntry type="library" name="bnkit" level="project" />
     <orderEntry type="library" name="ASRPOG" level="project" />
   </component>
 </module>

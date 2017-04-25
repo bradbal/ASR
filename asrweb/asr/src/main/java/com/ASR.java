@@ -31,7 +31,8 @@ public class ASR {
     private PartialOrderGraph graph;
 
     public ASR() {
-        this.graph = new PartialOrderGraph("/Users/marnie/Documents/Repositories/Development/bnkit/bnkit/src/test/resources/testPOGraphMed.dot");
+        this.graph = new PartialOrderGraph("/home/ariane/Documents/bodenlab/bnkit/bnkit/src/test/resources/testPOGraphMed.dot");
+                //("/Users/marnie/Documents/Repositories/Development/bnkit/bnkit/src/test/resources/testPOGraphMed.dot");
     }
 
     /*******************************************************************************************************************
