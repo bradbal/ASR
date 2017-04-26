@@ -43,6 +43,7 @@ public class ASR {
 
 
     public ASR() {
+        int edd = 2;
     }
 
 
