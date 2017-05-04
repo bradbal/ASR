@@ -42,6 +42,7 @@ setup_data = function (graph) {
             if (poag_count == 0) {
                 node.deleted_during_inference = true;
                 node.inferred = false;
+                node.msa = true;
                 node.many_edges = false;
                 node.start = node.x;
                 node.end = node.x;
@@ -59,6 +60,7 @@ setup_data = function (graph) {
                 var node_inferred = node_dict[node.id];
                 // Update the x coords to match that of the MSA node (to account for deletions)
                 node.start = node_inferred.start;
+                node.msa = false;
                 node.x = node_inferred.start;
                 node.end = node_inferred.end;
                 node.inferred = true;
@@ -356,7 +358,8 @@ create_poags = function (options) {
     // Make the radius based on the graph height and the number of lanes
     graph.options.graph.colours = options.colours;
     graph.max_radius = (options.height / graph.lanes.length) / 3;
-    graph.min_radius = graph.max_radius / 2;
+    // Where the minimum size of the radius is set up to determine when to stop drawing labels
+    graph.min_radius = graph.max_radius / 3;
     graph = make_scales(graph);
     graph = setup_svg(graph);
     graph = setup_items(graph);

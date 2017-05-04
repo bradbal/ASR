@@ -241,7 +241,8 @@ draw_nodes = function (graph, nodes, x_min, x_max) {
                     .attr("fill", options.colours[node.label]);
 
             // If the size of the graph is small we don't want to have labels
-            if (radius > graph.min_radius)  {
+            // Also don't want to draw labels on the pie charts
+            if (radius > graph.min_radius && (node.seq.chars.length < 2 || node.msa != true))  {
 
                 group.append("text")
                     .attr("class", "node_text")
